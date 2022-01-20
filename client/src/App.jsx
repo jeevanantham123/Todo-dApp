@@ -36,11 +36,11 @@ function App() {
     <Container className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ... min-h-screen min-w-full">
       <Center className="text-black rounded-md" flexDir="column" gap="20px">
         <Text className="text-[45px] font-semibold">Todo Dapp</Text>
-        <InputGroup size="md" w="500px">
+        <InputGroup size="md" w={{ base: "full", md: "500px" }}>
           <Input
             value={todo}
             onChange={handleChange}
-            placeholder="Here is a sample placeholder"
+            placeholder="Enter your task here"
             bg="white"
           />
           <InputRightElement width="4.5rem">
