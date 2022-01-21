@@ -20,10 +20,14 @@ Using Web 3.0 methodologies
 2. Create a Wallet
 3. Change Network to Rinkeby
 4. Get Some Test Ether from [Rinkeby Faucet](https://faucets.chain.link/rinkeby)
-5. Clone/Fork the Repo
-6. `cd client`
-7. Install the dependencies `npm install`
-8. Run `npx vite`
+5. Voila Enjoy the Todo Dapp
+
+## Local Devlopment
+
+1. Clone/Fork the Repo
+2. `cd client`
+3. Install the dependencies `npm install`
+4. Run `npx vite`
 
 ## Deployment
 
