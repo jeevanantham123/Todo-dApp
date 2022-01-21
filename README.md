@@ -1,10 +1,10 @@
-# web3.0-todo - Web 3.0 Blockchain Application (Todo Dapp)
+# web3.0-todo - Web 3.0 Blockchain Application
 
 ![TodoDapp](https://i.ibb.co/4sVpXCx/Screenshot-20220121105509-1919x898.png)
 
 ## Introduction
 
-Using Web 3.0 methodologies,
+Using Web 3.0 methodologies
 1.Solidity
 2.Metamask
 3.HardHat
