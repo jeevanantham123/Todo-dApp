@@ -15,13 +15,16 @@ import {
   ListIcon,
   ListItem,
   Spinner,
+  Divider,
 } from "@chakra-ui/react";
 import { CheckCircleIcon } from "@chakra-ui/icons";
 import { TaskContext } from "./Context/appContext";
+import Header from "./Components/header";
+import Footer from "./Components/Footer";
 
 function App() {
   const {
-    currentUser,
+    currentAccount,
     connectWallet,
     todo,
     handleChange,
@@ -29,14 +32,12 @@ function App() {
     Tasks,
     isLoading,
   } = useContext(TaskContext);
-  useEffect(() => {
-    if (!currentUser) connectWallet();
-  }, []);
+
   return (
-    <Container className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ... min-h-screen min-w-full">
-      <Center className="text-black rounded-md" flexDir="column" gap="20px">
-        <Text className="text-[45px] font-semibold">Todo Dapp</Text>
-        <InputGroup size="md" w={{ base: "full", md: "500px" }}>
+    <Container className="bg-gray-200 min-h-screen min-w-full" p="0px">
+      <Header />
+      <Center className="text-black" flexDir="column" gap="20px" pb="30px">
+        <InputGroup size="md" w={{ base: "90vw", md: "500px" }}>
           <Input
             value={todo}
             onChange={handleChange}
@@ -72,13 +73,16 @@ function App() {
           {Tasks?.map((task, i) => {
             return (
               <ListItem key={i} display="flex" alignItems="center">
-                <ListIcon as={CheckCircleIcon} color="white" />
-                <Text fontSize="20px">{task}</Text>
+                <ListIcon as={CheckCircleIcon} color="green" />
+                <Text fontSize="20px" fontWeight="medium">
+                  {task}
+                </Text>
               </ListItem>
             );
           })}
         </List>
       </Center>
+      <Footer />
     </Container>
   );
 }
