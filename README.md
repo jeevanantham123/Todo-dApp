@@ -1,4 +1,4 @@
-# web3.0-todo - Web 3.0 Blockchain Application
+# Todo-dApp - Web 3.0 Blockchain Application
 
 ![TodoDapp](https://i.ibb.co/4sVpXCx/Screenshot-20220121105509-1919x898.png)
 
