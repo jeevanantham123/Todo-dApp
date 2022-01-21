@@ -36,4 +36,4 @@ Using Web 3.0 methodologies
 Thanks to [JavaScript Mastery](https://youtu.be/Wn_Kb3MR_cU)
 Source Code [Github](https://github.com/adrianhajdin/project_web3.0)
 
-you'll learn how to build a your first real Web 3.0 Application - from start to finish.
+you'll learn how to build your first real Web 3.0 Application - from start to finish.
