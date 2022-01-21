@@ -1,7 +1,8 @@
-import { Flex, HStack, Icon, Text, Tooltip, Box } from "@chakra-ui/react";
+import { Flex, HStack, Icon, Text } from "@chakra-ui/react";
 import React, { useContext } from "react";
 import { DiCssdeck } from "react-icons/di";
 import { FaUserSecret } from "react-icons/fa";
+
 import { TaskContext } from "../Context/appContext";
 
 export default function Header() {
@@ -9,7 +10,6 @@ export default function Header() {
   return (
     <HStack
       p="10px"
-      mb="20px"
       position="sticky"
       top="0px"
       zIndex="999"

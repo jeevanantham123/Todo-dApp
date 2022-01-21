@@ -132,7 +132,7 @@ export const TasksProvider = ({ children }) => {
   useEffect(() => {
     checkIfWalletIsConnect();
     checkIfTasksExists();
-  }, [transactionCount]);
+  }, [transactionCount, currentAccount]);
 
   return (
     <TaskContext.Provider
